@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Pyramid</title>
+    <style>
+        body{
+            background-color: black;
+            overflow-x: hidden;
+            color: white;
+        }
+        .section1{
+            position: relative;
+        }
+        .section1 video{
+            position: fixed;
+            object-fit: cover;
+            width: 100%;
+            z-index: 0;
+        }
+        .section2{
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h1{
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section2">
+        <h1>The Loop Pyramid</h1>
+        <p>To see the result go in Developer mode</p>
+    </div>
+    <div class="section1">
+        <video src="assets/videos/bmw-m3-e46-black.1920x1080.mp4" autoplay muted loop></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
